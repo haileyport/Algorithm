@@ -1,0 +1,16 @@
+function solution(a, b) {
+    // a월 b일 의 요일
+    let days = b;
+    const months = [0, 31, 29, 31, 30, 31, 30, 31, 31, 30, ]
+    for(i=1; i<a; i++) {
+        if(i<8) {
+            days += i%2 === 0 ? 30 : 31;
+        } else {
+            days += i%2 === 0 ? 31 : 30;
+        }
+        days -= i === 2 ? 1 : 0;
+    }
+    const weeks = ['', 'FRI', 'SAT', 'SUN', 'MON', 'TUE', 'WED', 'THU'];
+    const idx = days%7 === 0 ? 7 : days%7;
+    return weeks[idx];
+}
