@@ -48,9 +48,6 @@ function solution(id_list, report, k) {
         }
     }
     
-    console.log(result);
-    
     answer = Object.values(result);
-    
     return answer;
 }
