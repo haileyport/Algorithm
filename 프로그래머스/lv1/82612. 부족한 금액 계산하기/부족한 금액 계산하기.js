@@ -1,5 +1,4 @@
 function solution(price, money, count) {
-    let answer = -1;
     // n번째 이용 시 price*n으로 이용료 상승
     // 놀이기구 count번 탑승, 현재 자산에서 얼마가 모자라는지 계산
     // 안 모자라면 0
